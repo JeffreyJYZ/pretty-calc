@@ -1,0 +1,9 @@
+{
+	"$schema": "https://biomejs.dev/schemas/latest/schema.json",
+	"files": {
+		"includes": ["**", "!dist", "!src-tauri/gen", "!src-tauri/target"]
+	},
+	"formatter": {
+		"indentWidth": 4
+	}
+}

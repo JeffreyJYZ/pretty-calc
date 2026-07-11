@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04BD7907DD1FF269ADC09B69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A86F5586A23AF3BFC0D5B4C9 /* LaunchScreen.storyboard */; };
+		1CEE27222766964A14B1102E /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8166666CF9CBEA7CACC6B586 /* main.mm */; };
+		44C3C8EFC474F0C227F69073 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16BBC3DC9FF0AE50AFBC063 /* Metal.framework */; };
+		4DCEABD6924B1B09093D9749 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E197FA3B507FBDE859D1DE /* UIKit.framework */; };
+		54609BE13D1021B22870F4E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CFA1D2128920BADDFB7CD194 /* Assets.xcassets */; };
+		5C85FA6D3551B87483CD4766 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DCCE18C9BF90B53019EB66A /* CoreGraphics.framework */; };
+		5ED20B0F2096AD6AEAADAC4D /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60FDFAF1833990B92DC24584 /* MetalKit.framework */; };
+		969DE3E864183529793435C4 /* libapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9F4448FD853DA8856C61E11 /* libapp.a */; };
+		B6D64BF77EF4757FA93EED18 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3BDBC5E7C0E37F4311107CE /* WebKit.framework */; };
+		BC3635385448C94AAD0FB575 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 3940119F223AA03CB4C072F1 /* assets */; };
+		E1B6E90458C5F18D22A41B49 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFE7384C68D43ACC41C45DF7 /* QuartzCore.framework */; };
+		E8F8AC28CEC041C878CBCD26 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5DC9C30AD0E9CCFC8BF93D2 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		214A7B8D4384BA2C09CA35F8 /* main.rs */ = {isa = PBXFileReference; path = main.rs; sourceTree = "<group>"; };
+		3940119F223AA03CB4C072F1 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = SOURCE_ROOT; };
+		3DCCE18C9BF90B53019EB66A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4AC3DF7BCCD204BA1E0F35A4 /* lib.rs */ = {isa = PBXFileReference; path = lib.rs; sourceTree = "<group>"; };
+		572AF9AD4DABC9DB73547D4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		5F240493C044811CB0B28BCA /* bindings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bindings.h; sourceTree = "<group>"; };
+		60FDFAF1833990B92DC24584 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		75C0DAF26F8FA659C819D154 /* pretty-calc_iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "pretty-calc_iOS.entitlements"; sourceTree = "<group>"; };
+		8166666CF9CBEA7CACC6B586 /* main.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = main.mm; sourceTree = "<group>"; };
+		97D338325964D99C5E0F921B /* pretty-calc_iOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "pretty-calc_iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5DC9C30AD0E9CCFC8BF93D2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		A86F5586A23AF3BFC0D5B4C9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7E197FA3B507FBDE859D1DE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B9F4448FD853DA8856C61E11 /* libapp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libapp.a; sourceTree = "<group>"; };
+		C16BBC3DC9FF0AE50AFBC063 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		CFA1D2128920BADDFB7CD194 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D3BDBC5E7C0E37F4311107CE /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		DFE7384C68D43ACC41C45DF7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F7D972B9E2CF93C287B6D9BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				969DE3E864183529793435C4 /* libapp.a in Frameworks */,
+				5C85FA6D3551B87483CD4766 /* CoreGraphics.framework in Frameworks */,
+				44C3C8EFC474F0C227F69073 /* Metal.framework in Frameworks */,
+				5ED20B0F2096AD6AEAADAC4D /* MetalKit.framework in Frameworks */,
+				E1B6E90458C5F18D22A41B49 /* QuartzCore.framework in Frameworks */,
+				E8F8AC28CEC041C878CBCD26 /* Security.framework in Frameworks */,
+				4DCEABD6924B1B09093D9749 /* UIKit.framework in Frameworks */,
+				B6D64BF77EF4757FA93EED18 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		192222486534E4151BE357EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97D338325964D99C5E0F921B /* pretty-calc_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B333685D3B2D6F9C21A3AA3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				4AC3DF7BCCD204BA1E0F35A4 /* lib.rs */,
+				214A7B8D4384BA2C09CA35F8 /* main.rs */,
+			);
+			name = src;
+			path = ../../src;
+			sourceTree = "<group>";
+		};
+		7810E0C241F9F0F3B5BA7847 /* pretty-calc */ = {
+			isa = PBXGroup;
+			children = (
+				8166666CF9CBEA7CACC6B586 /* main.mm */,
+				F066CDDAB954237F21DDEE9E /* bindings */,
+			);
+			path = "pretty-calc";
+			sourceTree = "<group>";
+		};
+		78F9024F340E6096494BD156 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCCE18C9BF90B53019EB66A /* CoreGraphics.framework */,
+				B9F4448FD853DA8856C61E11 /* libapp.a */,
+				C16BBC3DC9FF0AE50AFBC063 /* Metal.framework */,
+				60FDFAF1833990B92DC24584 /* MetalKit.framework */,
+				DFE7384C68D43ACC41C45DF7 /* QuartzCore.framework */,
+				A5DC9C30AD0E9CCFC8BF93D2 /* Security.framework */,
+				B7E197FA3B507FBDE859D1DE /* UIKit.framework */,
+				D3BDBC5E7C0E37F4311107CE /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A1D9FD3A79B354A904A85EF = {
+			isa = PBXGroup;
+			children = (
+				3940119F223AA03CB4C072F1 /* assets */,
+				CFA1D2128920BADDFB7CD194 /* Assets.xcassets */,
+				A86F5586A23AF3BFC0D5B4C9 /* LaunchScreen.storyboard */,
+				DA997814D08091A8F185D252 /* Externals */,
+				E35027DE1147D9D240038645 /* pretty-calc_iOS */,
+				B4F65ECF18FC9B662CF77610 /* Sources */,
+				5B333685D3B2D6F9C21A3AA3 /* src */,
+				78F9024F340E6096494BD156 /* Frameworks */,
+				192222486534E4151BE357EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B4F65ECF18FC9B662CF77610 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7810E0C241F9F0F3B5BA7847 /* pretty-calc */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DA997814D08091A8F185D252 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		E35027DE1147D9D240038645 /* pretty-calc_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				572AF9AD4DABC9DB73547D4C /* Info.plist */,
+				75C0DAF26F8FA659C819D154 /* pretty-calc_iOS.entitlements */,
+			);
+			path = "pretty-calc_iOS";
+			sourceTree = "<group>";
+		};
+		F066CDDAB954237F21DDEE9E /* bindings */ = {
+			isa = PBXGroup;
+			children = (
+				5F240493C044811CB0B28BCA /* bindings.h */,
+			);
+			path = bindings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48FAE07D3D0FCE926B3D19F4 /* pretty-calc_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C857A45A5F7BAC69AE6E43A /* Build configuration list for PBXNativeTarget "pretty-calc_iOS" */;
+			buildPhases = (
+				190B74E1276705E00A45F9CC /* Build Rust Code */,
+				DC18A9008EB601E7F0B8D3EA /* Sources */,
+				0689219D48CA8F083CBE61BD /* Resources */,
+				F7D972B9E2CF93C287B6D9BA /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "pretty-calc_iOS";
+			packageProductDependencies = (
+			);
+			productName = "pretty-calc_iOS";
+			productReference = 97D338325964D99C5E0F921B /* pretty-calc_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F83DC5A79D1244358C5B060 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 0520D700F76F196E1770D103 /* Build configuration list for PBXProject "pretty-calc" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8A1D9FD3A79B354A904A85EF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 192222486534E4151BE357EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48FAE07D3D0FCE926B3D19F4 /* pretty-calc_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0689219D48CA8F083CBE61BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54609BE13D1021B22870F4E0 /* Assets.xcassets in Resources */,
+				04BD7907DD1FF269ADC09B69 /* LaunchScreen.storyboard in Resources */,
+				BC3635385448C94AAD0FB575 /* assets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		190B74E1276705E00A45F9CC /* Build Rust Code */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Rust Code";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Externals/x86_64/${CONFIGURATION}/libapp.a",
+				"$(SRCROOT)/Externals/arm64/${CONFIGURATION}/libapp.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bun tauri ios xcode-script -v --platform ${PLATFORM_DISPLAY_NAME:?} --sdk-root ${SDKROOT:?} --framework-search-paths \"${FRAMEWORK_SEARCH_PATHS:?}\" --header-search-paths \"${HEADER_SEARCH_PATHS:?}\" --gcc-preprocessor-definitions \"${GCC_PREPROCESSOR_DEFINITIONS:-}\" --configuration ${CONFIGURATION:?} ${FORCE_COLOR} ${ARCHS:?}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC18A9008EB601E7F0B8D3EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CEE27222766964A14B1102E /* main.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		13ABD8D723A65A537F551ADE /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = debug;
+		};
+		6AC19F1108049579A248B223 /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = release;
+		};
+		72D2E6620DAFB51771AAE342 /* release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "pretty-calc_iOS/pretty-calc_iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = "pretty-calc_iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/$(PLATFORM_NAME) $(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "$(inherited) $(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/$(PLATFORM_NAME) $(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jyz.pretty-calc";
+				PRODUCT_NAME = "pretty-calc";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
+			};
+			name = release;
+		};
+		777C29D2EE73F71E13AA0048 /* debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = (
+					arm64,
+				);
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "pretty-calc_iOS/pretty-calc_iOS.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				"EXCLUDED_ARCHS[sdk=iphoneos*]" = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = "pretty-calc_iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=arm64]" = "$(inherited) $(PROJECT_DIR)/Externals/arm64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/$(PLATFORM_NAME) $(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				"LIBRARY_SEARCH_PATHS[arch=x86_64]" = "$(inherited) $(PROJECT_DIR)/Externals/x86_64/$(CONFIGURATION) $(SDKROOT)/usr/lib/swift $(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/$(PLATFORM_NAME) $(DEVELOPER_DIR)/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift-5.0/$(PLATFORM_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jyz.pretty-calc";
+				PRODUCT_NAME = "pretty-calc";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = arm64;
+			};
+			name = debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0520D700F76F196E1770D103 /* Build configuration list for PBXProject "pretty-calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13ABD8D723A65A537F551ADE /* debug */,
+				6AC19F1108049579A248B223 /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+		5C857A45A5F7BAC69AE6E43A /* Build configuration list for PBXNativeTarget "pretty-calc_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				777C29D2EE73F71E13AA0048 /* debug */,
+				72D2E6620DAFB51771AAE342 /* release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F83DC5A79D1244358C5B060 /* Project object */;
+}
