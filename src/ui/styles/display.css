@@ -1,0 +1,81 @@
+/* Display */
+.display {
+	background: var(--surface);
+	border-radius: var(--radius);
+	padding: 22px 22px 20px;
+	border: 1px solid var(--line);
+	box-shadow: var(--shadow);
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	min-height: 120px;
+	justify-content: flex-end;
+}
+
+.display-meta {
+	display: flex;
+	gap: 5px;
+	font-size: 0.62rem;
+	letter-spacing: 0.12em;
+	color: var(--ink-faint);
+	min-height: 16px;
+	text-transform: uppercase;
+}
+
+.meta-tag {
+	padding: 1px 7px;
+	border-radius: 4px;
+	background: var(--surface-2);
+	font-weight: 500;
+	border: 1px solid var(--line);
+}
+
+.meta-mem {
+	background: var(--t-mem);
+	border-color: transparent;
+	color: var(--t-mem-ink);
+}
+
+.meta-shift {
+	background: var(--t-fn);
+	border-color: transparent;
+	color: var(--t-fn-ink);
+}
+
+.display-expr {
+	font-size: var(--fs-expr);
+	color: var(--ink-soft);
+	word-break: break-all;
+	min-height: 1.4em;
+	line-height: 1.4;
+	font-variant-numeric: tabular-nums;
+	overflow-wrap: anywhere;
+}
+
+.display-result {
+	font-size: var(--fs-display);
+	font-weight: 500;
+	color: var(--ink);
+	letter-spacing: -0.03em;
+	line-height: 1.05;
+	word-break: break-all;
+	overflow-wrap: anywhere;
+	font-variant-numeric: tabular-nums;
+}
+
+.display-result.is-err {
+	font-size: clamp(0.95rem, 2.8vw, 1.3rem);
+	color: var(--t-clr-ink);
+	font-weight: 500;
+	letter-spacing: 0;
+}
+
+.display-preview-hint {
+	font-size: 0.65rem;
+	color: var(--ink-faint);
+	text-align: right;
+	min-height: 12px;
+	text-transform: lowercase;
+	font-style: italic;
+	letter-spacing: 0.04em;
+}

@@ -1,0 +1,80 @@
+/* Graph */
+.graph-controls {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+
+.graph-input-wrap {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	border: 1px solid var(--line);
+	background: var(--surface-2);
+	border-radius: 10px;
+	padding: 6px 10px;
+}
+
+.graph-prefix {
+	color: var(--accent);
+	font-family: ui-monospace, monospace;
+	font-weight: 600;
+	font-size: 0.95rem;
+}
+
+.graph-input {
+	flex: 1;
+	border: none;
+	background: transparent;
+	color: var(--ink);
+	font-family: ui-monospace, monospace;
+	font-size: 0.95rem;
+	outline: none;
+}
+
+.graph-range {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 0.78rem;
+	color: var(--ink-soft);
+}
+
+.graph-range input[type="range"] {
+	flex: 1;
+	accent-color: var(--accent);
+}
+
+.graph-range-val {
+	font-family: ui-monospace, monospace;
+	min-width: 2.5em;
+	text-align: right;
+	color: var(--ink);
+}
+
+.graph-err {
+	color: var(--t-clr-ink);
+	font-size: 0.85rem;
+	margin-bottom: 6px;
+}
+
+.graph-canvas-wrap {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.graph-canvas-wrap canvas {
+	border-radius: 12px;
+	max-width: 100%;
+	border: 1px solid var(--line);
+}
+
+.graph-hint {
+	font-size: 0.72rem;
+	color: var(--ink-faint);
+	text-align: center;
+	margin: 8px 0 2px;
+	line-height: 1.4;
+}

@@ -1,6 +1,6 @@
 {
 	"$schema": "https://schema.tauri.app/config/2",
-	"productName": "pretty-calc",
+	"productName": "Pretty Calc",
 	"version": "0.1.0",
 	"identifier": "com.jyz.pretty-calc",
 	"build": {
@@ -12,9 +12,13 @@
 	"app": {
 		"windows": [
 			{
-				"title": "pretty-calc",
-				"width": 800,
-				"height": 600
+				"title": "Pretty Calc",
+				"width": 940,
+				"height": 880,
+				"minWidth": 340,
+				"minHeight": 560,
+				"resizable": true,
+				"fullscreen": false
 			}
 		],
 		"security": {
@@ -23,6 +27,9 @@
 	},
 	"bundle": {
 		"active": true,
+		"iOS": {
+			"infoPlist": "Info.ios.plist"
+		},
 		"targets": "all",
 		"icon": [
 			"icons/32x32.png",

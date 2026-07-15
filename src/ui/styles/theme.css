@@ -1,0 +1,72 @@
+:root {
+	/* Soft charcoal-green base — pastel dark */
+	--bg: #1c2624;
+	--surface: #243330;
+	--surface-2: #2b3a37;
+	--line: #364641;
+	--line-strong: #445550;
+
+	/* Ink */
+	--ink: #dce7e3;
+	--ink-soft: #a4b8b2;
+	--ink-faint: #6f8a83;
+
+	/* One accent for primary action only */
+	--accent: #6fb8a4;
+	--accent-ink: #16201e;
+
+	/* Calm tints per key group */
+	--t-op: #2b3a35;
+	--t-op-ink: #92b8ad;
+	--t-fn: #2c3a36;
+	--t-fn-ink: #88b0a4;
+	--t-fn-alt: #33372a;
+	--t-fn-alt-ink: #a8b889;
+	--t-clr: #382c28;
+	--t-clr-ink: #c89a8a;
+	--t-toggle: #322f20;
+	--t-toggle-ink: #c0b585;
+	--t-mem: #342d23;
+	--t-mem-ink: #c4a988;
+
+	--shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+	--shadow-hover: 0 2px 8px rgba(0, 0, 0, 0.3);
+	--radius: 20px;
+	--radius-sm: 14px;
+	--fs-display: clamp(2.2rem, 7vw, 3.2rem);
+	--fs-expr: clamp(0.95rem, 2.2vw, 1.3rem);
+}
+
+/* Light variant */
+@media (prefers-color-scheme: light) {
+	:root {
+		--bg: #dde6e1;
+		--surface: #f2f6f3;
+		--surface-2: #e2eae5;
+		--line: #c8d4cd;
+		--line-strong: #b3c1ba;
+
+		--ink: #2f3a37;
+		--ink-soft: #5e6b66;
+		--ink-faint: #9aa9a3;
+
+		--accent: #5a9e8e;
+		--accent-ink: #ffffff;
+
+		--t-op: #e3ede9;
+		--t-op-ink: #4f7364;
+		--t-fn: #dfe9e6;
+		--t-fn-ink: #496b62;
+		--t-fn-alt: #ecefdc;
+		--t-fn-alt-ink: #6f7a44;
+		--t-clr: #f0dcd0;
+		--t-clr-ink: #a37253;
+		--t-toggle: #e6dec5;
+		--t-toggle-ink: #7d6f32;
+		--t-mem: #ecd9c3;
+		--t-mem-ink: #8d642e;
+
+		--shadow: 0 1px 2px rgba(60, 50, 70, 0.05);
+		--shadow-hover: 0 2px 6px rgba(60, 50, 70, 0.08);
+	}
+}

@@ -1,0 +1,28 @@
+/* Base-N panel */
+.display-compact {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	padding: 14px 16px;
+	background: var(--surface-2);
+	border-radius: var(--radius-sm);
+	margin-bottom: 8px;
+}
+
+.mono-row {
+	font-family: ui-monospace, "SF Mono", Menlo, monospace;
+	font-size: 0.72rem;
+	color: var(--ink-faint);
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	letter-spacing: 0;
+	text-transform: none;
+}
+
+.op-strip {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 6px;
+	margin-bottom: 8px;
+}
